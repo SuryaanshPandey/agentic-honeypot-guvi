@@ -260,3 +260,4 @@ def honeypot(req: HoneypotRequest, x_api_key: Optional[str] = Header(None)):
         reply=reply,
         extractedIntelligence=Intelligence(**state["intel"])
     )
+
