@@ -27,6 +27,21 @@ app = FastAPI(title="Agentic Honeypot API – Final Submission")
 logging.basicConfig(level=logging.INFO)
 
 # =====================================================
+# HEALTH & TESTER ENDPOINTS (CRITICAL)
+# =====================================================
+
+@app.get("/")
+def root_health():
+    return {"status": "ok"}
+
+@app.get("/honeypot")
+def honeypot_ping():
+    return {
+        "status": "ok",
+        "message": "Honeypot endpoint is live. Use POST for interaction."
+    }
+
+# =====================================================
 # MODELS
 # =====================================================
 
@@ -203,7 +218,7 @@ def handle_final_result(session_id: str, state: dict):
             logging.exception("GUVI_CALLBACK_FAILED")
 
 # =====================================================
-# API ENDPOINT
+# MAIN HONEYPOT ENDPOINT
 # =====================================================
 
 @app.post("/honeypot", response_model=HoneypotResponse)
@@ -260,4 +275,3 @@ def honeypot(req: HoneypotRequest, x_api_key: Optional[str] = Header(None)):
         reply=reply,
         extractedIntelligence=Intelligence(**state["intel"])
     )
-
