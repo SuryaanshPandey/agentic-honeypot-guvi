@@ -127,15 +127,19 @@ POST /honeypot
 
 ```json
 {
-"message": "Your bank KYC is expired. Update immediately."
+  "message": "Your bank KYC is expired. Update immediately."
 }
+```
 
-Example Response
+### Example Response
+
+```json
 {
-"reply": "Oh really? I don't remember getting any notification from my bank."
+  "reply": "Oh really? I don't remember getting any notification from my bank."
 }
+```
 
-🧪 Example Scam Conversation
+### 🧪 Example Scam Conversation
 
 Scammer
 Your PM Government subsidy of ₹8000 is approved.
@@ -146,7 +150,7 @@ Benefits department, Delhi.
 Agent
 Oh okay. How will I receive the money?
 
-📊 Future Improvements
+### 📊 Future Improvements
 
 LLM-powered dynamic scam conversations
 
@@ -160,22 +164,22 @@ Advanced attacker behavior profiling
 
 
 
-🏆 Buildathon
+### 🏆 Buildathon
 
 This project was developed during:
 
 India AI Impact Buildathon 2026
 at the AI Impact Summit
 
-👨‍💻 Author
+### 👨‍💻 Author
 
 Suryaansh Pandey
 
 BTech Student | AI Builder | Founder of DMCOI
 
-GitHub
+### GitHub
 https://github.com/SuryaanshPandey
 
-📜 License
+### 📜 License
 
 This project is intended for educational and research purposes.
