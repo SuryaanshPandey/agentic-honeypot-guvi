@@ -173,9 +173,9 @@ at the AI Impact Summit
 
 ### 👨‍💻 Author
 
-Suryaansh Pandey
+Suryaansh Pandey & Shashwat Ojha
 
-BTech Student | AI Builder | Founder of DMCOI
+BTech Student | AI Builder | Founders of DMCOI
 
 ### GitHub
 https://github.com/SuryaanshPandey
