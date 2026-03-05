@@ -1,165 +1,164 @@
-🛡️ Agentic AI Honeypot for Scam Detection
+# 🛡️ Agentic AI Honeypot for Scam Detection
 
-An AI-powered honeypot system that simulates a vulnerable user and intelligently interacts with scammers to analyze scam patterns, collect threat intelligence, and delay attackers.
+An AI-powered **honeypot system** designed to simulate a vulnerable user and intelligently interact with scammers to analyze scam patterns and gather threat intelligence.
 
-Built during the India AI Impact Buildathon 2026.
+This project was built during the **India AI Impact Buildathon 2026**.
 
-🚀 Overview
+---
 
-Traditional scam detection systems only block attackers after detection.
-This project takes a different approach:
+# 🚀 Overview
 
-Instead of blocking scammers immediately, the system engages them in conversation, gathers behavioral signals, and extracts intelligence about scam techniques.
+Most scam detection systems focus on **blocking attackers after detection**.
 
-The honeypot behaves like a confused or vulnerable user to keep scammers engaged longer.
+This project explores a different approach:
 
-🎯 Objectives
+Instead of immediately blocking scammers, the system **engages them in conversation**, behaves like a confused user, and collects useful information about scam techniques.
 
-Detect and analyze scam conversations
+The goal is to:
 
-Engage attackers automatically using AI-generated responses
+- Analyze scam strategies
+- Waste attacker time
+- Collect threat intelligence
+- Understand scam behavior patterns
 
-Collect threat intelligence
+---
 
-Waste attacker time
+# 🎯 Objectives
 
-Build a dataset of real scam strategies
+- Detect potential scam messages
+- Automatically respond using an AI agent
+- Simulate realistic user conversations
+- Analyze scammer behavior
+- Collect structured scam interaction data
 
-🧠 Key Features
-🤖 AI Agent Interaction
+---
 
-The honeypot acts like a real user and responds naturally to scammers.
+# 🧠 Key Features
 
-🧪 Scam Simulation
+## 🤖 AI Agent Interaction
+The honeypot responds like a real user and keeps scammers engaged through natural conversation.
 
-Predefined conversation flows simulate scenarios such as:
+## 🧪 Scam Scenario Simulation
+The system supports multiple scam scenarios such as:
 
-Bank KYC scams
+- Bank KYC scams  
+- Government subsidy scams  
+- OTP verification scams  
+- Refund and reward scams  
 
-Government subsidy scams
+## 🔍 Threat Intelligence Collection
+The system records:
 
-OTP scams
+- scammer messages
+- response patterns
+- conversation flow
+- engagement duration
 
-Refund scams
-
-🔍 Threat Intelligence
-
-The system logs:
-
-scammer messages
-
-behavioral patterns
-
-conversation history
-
-⚙️ Engagement Strategy
-
+## ⏳ Engagement Strategy
 The agent uses tactics like:
 
-confusion
+- confusion
+- asking repeated questions
+- requesting clarification
+- pretending lack of technical knowledge
 
-repeated clarification
+This **extends scammer interaction time** and increases intelligence collection.
 
-fake delays
+---
 
-asking irrelevant questions
+# 🏗️ Tech Stack
 
-to extend scammer interaction time.
+**Backend**
+- FastAPI
+- Python
 
-🏗️ Tech Stack
+**AI Logic**
+- Rule-based conversational agent
+- Scam pattern simulation
 
-Backend
+**Deployment**
+- Render
 
-FastAPI
+**Version Control**
+- GitHub
 
-Python
+---
 
-AI / Logic
-
-Rule based conversational flows
-
-Pattern detection
-
-Deployment
-
-Render
-
-Version Control
-
-GitHub
-
-📂 Project Structure
-agentic-honeypot
+# 📂 Project Structure
+agentic-honeypot-guvi
 │
-├── main.py              # FastAPI application
-├── requirements.txt     # Dependencies
-├── README.md            # Project documentation
-└── logs/                # Interaction logs
-⚡ Installation
+├── main.py # FastAPI server
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── logs/ # Interaction logs
+
+
+---
+
+# ⚡ Installation
 
 Clone the repository
-
 git clone https://github.com/SuryaanshPandey/agentic-honeypot-guvi.git
+
 cd agentic-honeypot-guvi
 
-Install dependencies
 
+Install dependencies
 pip install -r requirements.txt
 
-Run the server
 
+Run the server
 uvicorn main:app --reload
 
-Server will run at
 
+Server will start at:
 http://127.0.0.1:8000
-📡 API Usage
-POST Request
 
-Endpoint
 
-/honeypot
+---
 
-Example Request
+# 📡 API Usage
 
+### Endpoint
+POST /honeypot
+
+
+### Example Request
+
+```json
 {
-  "message": "Your bank KYC is expired. Update now."
+"message": "Your bank KYC is expired. Update immediately."
 }
 
 Example Response
-
 {
-  "reply": "Oh really? I don't remember getting any message from my bank."
+"reply": "Oh really? I don't remember getting any notification from my bank."
 }
-🧪 Example Scam Scenario
+
+🧪 Example Scam Conversation
 
 Scammer
-
-Your PM government subsidy of ₹8000 is approved.
-
+Your PM Government subsidy of ₹8000 is approved.
 Agent
-
 I don't remember applying for this. Which department is this?
-
 Scammer
-
 Benefits department, Delhi.
-
 Agent
-
 Oh okay. How will I receive the money?
 
 📊 Future Improvements
 
-LLM powered dynamic conversations
+LLM-powered dynamic scam conversations
 
 Scam classification model
 
-Real-time scammer fingerprinting
-
-Dashboard for threat analytics
-
 Automated scam dataset generation
+
+Real-time threat analytics dashboard
+
+Advanced attacker behavior profiling
+
+
 
 🏆 Buildathon
 
@@ -172,11 +171,11 @@ at the AI Impact Summit
 
 Suryaansh Pandey
 
-BTech Student | AI Builder | Founder – DMCOI
+BTech Student | AI Builder | Founder of DMCOI
 
 GitHub
 https://github.com/SuryaanshPandey
 
 📜 License
 
-This project is for research and educational purposes.
+This project is intended for educational and research purposes.
